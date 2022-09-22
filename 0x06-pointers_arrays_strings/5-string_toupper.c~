@@ -3,10 +3,9 @@
 /**
  **string_toupper - print capital alphabet
  *Return: 0 if success
- *@str: pointer to address
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *)
 {
 	int i = 0;
 
