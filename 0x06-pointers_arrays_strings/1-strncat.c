@@ -1,25 +1,22 @@
 #include "main.h"
 
 /**
- **_strncpy - concatenate two strings
+ **_strncat - concatenate two strings
  *@dest: destination file
  *@src: source file
  *@n: maximum number of bytes to be copied from source to destination
  *Return: destination
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, src_len = 0;
+	int i = 0, dest_len = 0;
 
-	while (src[i++])
-		src_len++;
+	while (dest[i++])
+		dest_len++;
 
 	for (i = 0; src[i] && i < n; i++)
-		dest[i] = src[i];
-
-	for (i = src_len; i < n; i++)
-		dest[i] = '\0';
+		dest[dest_len++] = src[i];
 
 	return (dest);
 }
