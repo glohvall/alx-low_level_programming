@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ *_strchr - find character in string
+ *@s: string pointer
+ *@c: character to be found
+ *Return: pointer to c if c is found else
+ *NULL
+ */
+
+char *_strchr(char *s, char c)
+{
+	if ((c >= 32) && (c <= 126))
+		return (s);
+	else
+		return (0);
+}
