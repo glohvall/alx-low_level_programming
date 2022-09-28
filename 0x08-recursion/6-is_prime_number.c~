@@ -1,4 +1,4 @@
-#include "main.h"
+#includ "main.h"
 
 /**
  * primeFinder - searches for if a number is prime
